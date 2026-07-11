@@ -1,80 +1,51 @@
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, LockKeyhole, Mail } from "lucide-react";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteNav } from "@/components/site-nav";
+import { LockKeyhole } from "lucide-react";
+import { Logo } from "@/components/brand/logo";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 export default function SignInPage() {
   return (
-    <main className="min-h-screen bg-background">
-      <SiteNav />
-      <section className="background-paths relative px-5 pb-20 pt-32 lg:px-8 lg:pt-40">
-        <div className="relative mx-auto grid max-w-6xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <div>
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-teal-100 bg-white px-3 py-1 text-xs font-semibold uppercase text-primary shadow-hairline">
-              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              Secure workspace access
-            </div>
-            <h1 className="text-5xl font-semibold leading-[1.04] text-slate-950 sm:text-6xl">
-              Sign in to your supplier ESG workspace.
-            </h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Continue to Esgria Collect, Score and Tasks with your company account.
-            </p>
-          </div>
-
-          <form className="rounded-[32px] border border-slate-200 bg-white p-6 shadow-soft">
-            <div className="mb-8 flex items-center gap-3">
-              <span className="relative block h-12 w-28 overflow-hidden rounded-2xl border border-teal-100 bg-white shadow-hairline">
-                <Image
-                  src="/esgria-logo.svg"
-                  alt="Esgria logo"
-                  fill
-                  sizes="112px"
-                  className="object-cover object-left"
-                />
-              </span>
-            </div>
-            <label className="text-sm font-semibold text-slate-700" htmlFor="email">
-              Work email
-            </label>
-            <div className="relative mt-2">
-              <Mail className="absolute left-4 top-3.5 h-5 w-5 text-slate-400" />
-              <input
-                id="email"
-                type="email"
-                className="h-12 w-full rounded-2xl border border-slate-200 pl-12 pr-4 outline-none focus:border-primary"
-                placeholder="anna@company.pl"
-              />
-            </div>
-            <label className="mt-5 block text-sm font-semibold text-slate-700" htmlFor="password">
-              Password
-            </label>
-            <div className="relative mt-2">
-              <LockKeyhole className="absolute left-4 top-3.5 h-5 w-5 text-slate-400" />
-              <input
-                id="password"
-                type="password"
-                className="h-12 w-full rounded-2xl border border-slate-200 pl-12 pr-4 outline-none focus:border-primary"
-                placeholder="Enter password"
-              />
-            </div>
-            <button
-              type="button"
-              className="mt-7 inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-semibold text-white transition hover:bg-[#0d665f] active:scale-95"
-            >
-              Sign In <ArrowRight className="h-4 w-4" />
-            </button>
-            <p className="mt-5 text-center text-sm text-slate-500">
-              Need access?{" "}
-              <Link href="/request-demo" className="font-semibold text-primary">
-                Request a demo
-              </Link>
-            </p>
-          </form>
+    <main className="grid min-h-screen bg-[#f8faf9] lg:grid-cols-[0.95fr_1.05fr]">
+      <section className="hidden border-r border-slate/10 bg-slate p-10 text-white lg:flex lg:flex-col lg:justify-between">
+        <Logo className="[&_span]:text-white" />
+        <div>
+          <p className="max-w-xl text-5xl font-semibold tracking-[-0.055em]">
+            Your supplier ESG intelligence workspace.
+          </p>
+          <p className="mt-5 max-w-md text-white/60">
+            Secure access for procurement teams, sustainability leaders, and suppliers.
+          </p>
         </div>
+        <p className="text-sm text-white/40">Esgexa sp. z o.o. · Warsaw, Poland</p>
       </section>
-      <SiteFooter />
+      <section className="flex items-center justify-center p-6">
+        <Card className="w-full max-w-md p-6 shadow-soft">
+          <div className="lg:hidden">
+            <Logo />
+          </div>
+          <div className="mt-8 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary lg:mt-0">
+            <LockKeyhole className="h-6 w-6" />
+          </div>
+          <h1 className="mt-6 text-3xl font-semibold tracking-[-0.04em] text-slate">Sign in to Esgexa</h1>
+          <p className="mt-2 text-sm text-slate/58">Use your company account to continue.</p>
+          <form className="mt-8 grid gap-4">
+            <label className="grid gap-2 text-sm font-medium text-slate">
+              Email
+              <input className="h-12 rounded-xl border border-slate/10 px-4 outline-none focus:border-primary/40 focus:ring-4 focus:ring-primary/10" placeholder="name@company.com" />
+            </label>
+            <label className="grid gap-2 text-sm font-medium text-slate">
+              Password
+              <input type="password" className="h-12 rounded-xl border border-slate/10 px-4 outline-none focus:border-primary/40 focus:ring-4 focus:ring-primary/10" placeholder="••••••••" />
+            </label>
+            <Button type="button" size="lg">Sign in</Button>
+          </form>
+          <div className="mt-6 flex items-center justify-between text-sm">
+            <Link href="/" className="text-slate/55 hover:text-primary">Back to site</Link>
+            <Link href="#" className="font-medium text-primary">Forgot password?</Link>
+          </div>
+        </Card>
+      </section>
     </main>
   );
 }

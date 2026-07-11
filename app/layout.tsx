@@ -13,10 +13,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Esgria | AI Supplier ESG Intelligence",
+  metadataBase: new URL("https://esgexa.com"),
+  title: {
+    default: "Esgexa | AI Supplier ESG Intelligence",
+    template: "%s | Esgexa",
+  },
   description:
-    "Collect supplier ESG questionnaires, verify evidence, score suppliers and manage corrective actions from one enterprise platform.",
-  metadataBase: new URL("https://esgria.io"),
+    "Esgexa helps procurement and sustainability teams collect supplier ESG data, verify evidence, score suppliers, and manage corrective actions.",
+  applicationName: "Esgexa",
+  keywords: [
+    "supplier ESG",
+    "ESG data collection",
+    "procurement sustainability",
+    "supplier scoring",
+    "corrective actions",
+    "Poland ESG platform",
+  ],
+  openGraph: {
+    title: "Esgexa | AI Supplier ESG Intelligence",
+    description:
+      "Collect ESG questionnaires, verify evidence, score suppliers, and manage improvement plans from one intelligent platform.",
+    url: "https://esgexa.com",
+    siteName: "Esgexa",
+    type: "website",
+  },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/apple-touch-icon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -25,8 +50,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
