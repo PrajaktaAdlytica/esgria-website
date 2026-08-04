@@ -49,10 +49,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Esgexa",
+    url: "https://esgexa.com",
+    sameAs: [
+      "https://www.linkedin.com/company/esgexa/",
+      "https://www.crunchbase.com/organization/esgexa",
+    ],
+  };
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
       </body>
     </html>
   );

@@ -81,6 +81,9 @@ export function Navbar() {
           <Link href="/pricing" className="transition hover:text-primary">
             Pricing
           </Link>
+          <Link href="/news/funding-announcement" className="transition hover:text-primary">
+            News
+          </Link>
           <Link href="/request-demo" className="transition hover:text-primary">
             Request demo
           </Link>
@@ -104,7 +107,7 @@ export function Navbar() {
       {open ? (
         <div className="border-t border-slate/10 bg-white lg:hidden">
           <div className="section-shell grid gap-2 py-4">
-            {[...products, { name: "Pricing", href: "/pricing" }, { name: "Request demo", href: "/request-demo" }, { name: "Sign in", href: "/sign-in" }].map((item) => (
+            {[...products, { name: "Pricing", href: "/pricing" }, { name: "News", href: "/news/funding-announcement" }, { name: "Request demo", href: "/request-demo" }, { name: "Sign in", href: "/sign-in" }].map((item) => (
               <Link
                 key={item.name}
                 href={item.href}

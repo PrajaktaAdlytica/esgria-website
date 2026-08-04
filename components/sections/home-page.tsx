@@ -193,6 +193,37 @@ export function HomePage() {
         </div>
       </section>
 
+      <section className="pb-24">
+        <div className="section-shell">
+          <div className="relative overflow-hidden rounded-2xl border border-primary/15 bg-white px-6 py-8 shadow-[0_18px_45px_rgba(15,118,110,0.08)] sm:px-9 sm:py-10">
+            <div className="absolute right-0 top-0 h-32 w-32 rounded-bl-full bg-accent/15" />
+            <div className="relative grid gap-7 lg:grid-cols-[1fr_auto] lg:items-end">
+              <div className="max-w-3xl">
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm font-semibold uppercase tracking-[0.14em] text-primary">
+                  <span>Funding announcement</span>
+                  <span className="h-1 w-1 rounded-full bg-primary/45" aria-hidden="true" />
+                  <time dateTime="2026-05-06">May 6, 2026</time>
+                </div>
+                <h2 className="mt-5 text-3xl font-semibold tracking-[-0.04em] text-slate sm:text-4xl">
+                  Esgexa secures $480K in funding from Dlabs.
+                </h2>
+                <p className="mt-4 max-w-2xl text-base leading-7 text-slate/64">
+                  Esgexa is part of Dlabs&apos; global portfolio of companies building supplier ESG intelligence for complex operating environments.
+                </p>
+              </div>
+              <Button asChild variant="outline" className="shrink-0">
+                <a href="https://d-labs-site.vercel.app/companies" target="_blank" rel="noreferrer noopener">
+                  View Dlabs portfolio <ArrowRight className="h-4 w-4" />
+                </a>
+              </Button>
+            </div>
+            <Link href="/news/funding-announcement" className="relative mt-7 inline-flex items-center gap-2 text-sm font-medium text-primary transition hover:text-slate">
+              Read the announcement <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white py-24">
         <div className="section-shell grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <div>

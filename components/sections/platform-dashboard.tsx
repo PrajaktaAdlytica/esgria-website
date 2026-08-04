@@ -23,7 +23,7 @@ export function PlatformDashboard() {
         <div className="flex items-center justify-between border-b border-slate/10 px-5 py-4">
           <div>
             <p className="text-sm font-semibold text-slate">Supplier ESG Command Center</p>
-            <p className="text-xs text-slate/55">Warsaw procurement portfolio · Q3 2026</p>
+            <p className="text-xs text-slate/55">Warsaw procurement portfolio · May 2026</p>
           </div>
           <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
             1,248 suppliers

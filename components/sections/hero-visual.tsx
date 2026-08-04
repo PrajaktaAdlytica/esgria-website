@@ -75,7 +75,7 @@ export function HeroVisual() {
         </div>
       </motion.div>
       <motion.div
-        className="absolute right-7 top-7 w-[190px] rounded-2xl border border-slate/10 bg-white p-4 shadow-soft"
+        className="absolute right-7 top-7 w-[calc(100%-3.5rem)] rounded-2xl border border-slate/10 bg-white p-4 shadow-soft sm:w-[190px]"
         initial={{ opacity: 0, x: 18 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.9 }}
