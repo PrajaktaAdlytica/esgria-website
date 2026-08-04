@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Building2, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, Building2, Mail, MapPin } from "lucide-react";
 import { Logo } from "@/components/brand/logo";
 
 const footerGroups: Array<{ title: string; links: string[] }> = [
@@ -11,7 +11,7 @@ const footerGroups: Array<{ title: string; links: string[] }> = [
 export function Footer() {
   return (
     <footer className="border-t border-slate/10 bg-white">
-      <div className="section-shell grid gap-12 py-14 lg:grid-cols-[1.4fr_0.7fr_0.9fr_0.8fr_1.1fr]">
+      <div className="section-shell grid gap-12 py-14 lg:grid-cols-[1.4fr_0.8fr_0.9fr_0.9fr_1.1fr]">
         <div>
           <Logo />
           <p className="mt-5 max-w-sm text-sm leading-6 text-slate/62">
@@ -53,22 +53,6 @@ export function Footer() {
               className="inline-flex items-center gap-2 text-slate/62 transition hover:text-primary"
             >
               <Building2 className="h-4 w-4 text-primary" /> Dlabs portfolio <ArrowUpRight className="h-3.5 w-3.5" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/esgexa/"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 text-slate/62 transition hover:text-primary"
-            >
-              <Linkedin className="h-4 w-4 text-primary" /> LinkedIn <ArrowUpRight className="h-3.5 w-3.5" />
-            </a>
-            <a
-              href="https://www.crunchbase.com/organization/esgexa"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 text-slate/62 transition hover:text-primary"
-            >
-              <ArrowUpRight className="h-4 w-4 text-primary" /> Crunchbase
             </a>
           </div>
         </div>

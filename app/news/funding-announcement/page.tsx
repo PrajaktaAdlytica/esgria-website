@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, Building2 } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Building2, Linkedin } from "lucide-react";
 import { Footer } from "@/components/sections/footer";
 import { Navbar } from "@/components/sections/navbar";
 import { Button } from "@/components/ui/button";
@@ -59,6 +59,27 @@ export default function FundingAnnouncementPage() {
                 <p className="mt-1 text-sm leading-6 text-slate/62">
                   Esgexa builds supplier ESG intelligence for procurement teams, sustainability teams, and suppliers.
                 </p>
+              </div>
+            </div>
+            <div className="mt-6 border-t border-slate/10 pt-5">
+              <p className="text-sm font-semibold text-slate">Company profiles</p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                <a
+                  href="https://www.linkedin.com/company/esgexa/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-2 rounded-full border border-slate/10 px-3 py-2 text-sm font-medium text-slate/68 transition hover:border-primary/30 hover:text-primary"
+                >
+                  <Linkedin className="h-4 w-4 text-primary" /> LinkedIn <ArrowUpRight className="h-3.5 w-3.5" />
+                </a>
+                <a
+                  href="https://www.crunchbase.com/organization/esgexa"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-2 rounded-full border border-slate/10 px-3 py-2 text-sm font-medium text-slate/68 transition hover:border-primary/30 hover:text-primary"
+                >
+                  Crunchbase <ArrowUpRight className="h-3.5 w-3.5" />
+                </a>
               </div>
             </div>
           </aside>
