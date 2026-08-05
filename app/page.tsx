@@ -42,6 +42,7 @@ import { cn } from "@/lib/utils";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteNav } from "@/components/site-nav";
 import { EsgexaLogo } from "@/components/esgexa-logo";
+import { EntryHero } from "@/components/entry-hero";
 
 const products = [
   {
@@ -1035,7 +1036,8 @@ function CTAFooter() {
 export default function Home() {
   return (
     <main>
-      <SiteNav />
+      <EntryHero />
+      <SiteNav revealAfterId="top" />
       <Hero />
       <Problem />
       <TrustedBy />

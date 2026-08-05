@@ -66,14 +66,21 @@ function NavButton({
   );
 }
 
-export function SiteNav() {
+export function SiteNav({ revealAfterId }: { revealAfterId?: string }) {
   const [open, setOpen] = useState(false);
   const [mobile, setMobile] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(!revealAfterId);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 16);
+      if (revealAfterId) {
+        const target = document.getElementById(revealAfterId);
+        setVisible(Boolean(target && target.getBoundingClientRect().top <= 80));
+      }
+    };
     const onClick = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setOpen(false);
@@ -81,18 +88,19 @@ export function SiteNav() {
     };
 
     onScroll();
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("mousedown", onClick);
     return () => {
       window.removeEventListener("scroll", onScroll);
       document.removeEventListener("mousedown", onClick);
     };
-  }, []);
+  }, [revealAfterId]);
 
   return (
     <header
       className={cn(
         "fixed left-0 right-0 top-0 z-50 transition-all duration-300",
+        visible ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-full opacity-0",
         scrolled
           ? "border-b border-slate-200/80 bg-white/86 shadow-sm backdrop-blur-xl"
           : "bg-transparent",
