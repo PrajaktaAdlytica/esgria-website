@@ -13,34 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://esgexa.com"),
-  title: {
-    default: "Esgexa | AI Supplier ESG Intelligence",
-    template: "%s | Esgexa",
-  },
+  title: "Esgexa | AI Supplier ESG Intelligence",
   description:
-    "Esgexa helps procurement and sustainability teams collect supplier ESG data, verify evidence, score suppliers, and manage corrective actions.",
-  applicationName: "Esgexa",
-  keywords: [
-    "supplier ESG",
-    "ESG data collection",
-    "procurement sustainability",
-    "supplier scoring",
-    "corrective actions",
-    "Poland ESG platform",
-  ],
+    "Collect supplier ESG questionnaires, verify evidence, score suppliers and manage corrective actions from one enterprise platform.",
+  metadataBase: new URL("https://esgexa.com"),
   openGraph: {
     title: "Esgexa | AI Supplier ESG Intelligence",
     description:
-      "Collect ESG questionnaires, verify evidence, score suppliers, and manage improvement plans from one intelligent platform.",
+      "Collect supplier ESG questionnaires, verify evidence, score suppliers and manage corrective actions from one enterprise platform.",
     url: "https://esgexa.com",
     siteName: "Esgexa",
     type: "website",
-  },
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/apple-touch-icon.svg",
   },
 };
 
@@ -61,8 +44,8 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         {children}
         <script
           type="application/ld+json"

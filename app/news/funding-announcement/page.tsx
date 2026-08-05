@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Building2, Linkedin } from "lucide-react";
-import { Footer } from "@/components/sections/footer";
-import { Navbar } from "@/components/sections/navbar";
-import { Button } from "@/components/ui/button";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteNav } from "@/components/site-nav";
 
 export const metadata: Metadata = {
   title: "Esgexa secures $480K in funding from Dlabs",
@@ -19,73 +18,76 @@ export const metadata: Metadata = {
 
 export default function FundingAnnouncementPage() {
   return (
-    <>
-      <Navbar />
-      <main className="pt-32">
-        <article className="section-shell pb-24">
-          <Link href="/" className="inline-flex items-center gap-2 text-sm font-medium text-slate/62 transition hover:text-primary">
+    <main className="min-h-screen bg-background">
+      <SiteNav />
+      <article className="background-paths relative px-5 pb-20 pt-32 lg:px-8 lg:pt-40">
+        <div className="relative mx-auto max-w-7xl">
+          <Link href="/" className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-primary">
             <ArrowLeft className="h-4 w-4" /> Back to home
           </Link>
-          <header className="mt-12 max-w-4xl">
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
-              <span>Funding announcement</span>
-              <span className="h-1 w-1 rounded-full bg-primary/45" aria-hidden="true" />
-              <time dateTime="2026-05-06">May 6, 2026</time>
+
+          <header className="mt-12 max-w-5xl">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-teal-100 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary shadow-hairline">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+              Funding announcement
             </div>
-            <h1 className="mt-6 text-balance text-5xl font-semibold tracking-[-0.055em] text-slate lg:text-7xl">
+            <time dateTime="2026-05-06" className="block text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+              May 6, 2026
+            </time>
+            <h1 className="mt-5 max-w-5xl text-5xl font-semibold leading-[1.04] text-slate-950 sm:text-6xl">
               Esgexa secures $480K in funding from Dlabs.
             </h1>
-            <p className="mt-7 max-w-3xl text-xl leading-9 text-slate/68">
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
               Esgexa is part of Dlabs&apos; global portfolio of companies building supplier ESG intelligence for complex operating environments.
             </p>
           </header>
 
-          <div className="mt-14 border-y border-slate/10 py-10">
-            <p className="max-w-3xl text-lg leading-8 text-slate/72">Esgexa has secured $480K in funding from Dlabs.</p>
-            <Button asChild className="mt-8">
-              <a href="https://d-labs-site.vercel.app/companies" target="_blank" rel="noreferrer noopener">
-                View Dlabs portfolio <ArrowUpRight className="h-4 w-4" />
-              </a>
-            </Button>
+          <div className="mt-12 max-w-4xl rounded-[32px] border border-slate-200 bg-white p-6 shadow-soft lg:p-8">
+            <p className="text-lg leading-8 text-slate-600">Esgexa has secured $480K in funding from Dlabs.</p>
+            <a
+              href="https://d-labs-site.vercel.app/companies"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mt-7 inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(15,118,110,0.18)] transition hover:bg-[#0d665f] active:scale-95"
+            >
+              View Dlabs portfolio <ArrowUpRight className="h-4 w-4" />
+            </a>
           </div>
 
-          <aside className="mt-12 max-w-3xl rounded-2xl border border-slate/10 bg-white p-6 shadow-[0_1px_0_rgba(15,23,42,0.04)]">
+          <aside className="mt-6 max-w-4xl rounded-[32px] border border-slate-200 bg-white p-6 shadow-hairline lg:p-8">
             <div className="flex items-start gap-4">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
-                <Building2 className="h-5 w-5" />
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-teal-50 text-primary">
+                <Building2 className="h-6 w-6" />
               </span>
               <div>
-                <p className="font-semibold text-slate">About Esgexa</p>
-                <p className="mt-1 text-sm leading-6 text-slate/62">
-                  Esgexa builds supplier ESG intelligence for procurement teams, sustainability teams, and suppliers.
+                <h2 className="text-xl font-semibold text-slate-950">About Esgexa</h2>
+                <p className="mt-2 leading-7 text-slate-600">
+                  Esgexa builds supplier ESG intelligence for procurement teams, sustainability teams and suppliers.
                 </p>
               </div>
             </div>
-            <div className="mt-6 border-t border-slate/10 pt-5">
-              <p className="text-sm font-semibold text-slate">Company profiles</p>
-              <div className="mt-3 flex flex-wrap gap-3">
-                <a
-                  href="https://www.linkedin.com/company/esgexa/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="inline-flex items-center gap-2 rounded-full border border-slate/10 px-3 py-2 text-sm font-medium text-slate/68 transition hover:border-primary/30 hover:text-primary"
-                >
-                  <Linkedin className="h-4 w-4 text-primary" /> LinkedIn <ArrowUpRight className="h-3.5 w-3.5" />
-                </a>
-                <a
-                  href="https://www.crunchbase.com/organization/esgexa"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="inline-flex items-center gap-2 rounded-full border border-slate/10 px-3 py-2 text-sm font-medium text-slate/68 transition hover:border-primary/30 hover:text-primary"
-                >
-                  Crunchbase <ArrowUpRight className="h-3.5 w-3.5" />
-                </a>
-              </div>
+            <div className="mt-6 flex flex-wrap gap-3 border-t border-slate-200 pt-6">
+              <a
+                href="https://www.linkedin.com/company/esgexa/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-5 text-sm font-semibold text-slate-900 transition hover:border-primary hover:text-primary"
+              >
+                <Linkedin className="h-4 w-4" /> LinkedIn <ArrowUpRight className="h-4 w-4" />
+              </a>
+              <a
+                href="https://www.crunchbase.com/organization/esgexa"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-5 text-sm font-semibold text-slate-900 transition hover:border-primary hover:text-primary"
+              >
+                Crunchbase <ArrowUpRight className="h-4 w-4" />
+              </a>
             </div>
           </aside>
-        </article>
-      </main>
-      <Footer />
-    </>
+        </div>
+      </article>
+      <SiteFooter />
+    </main>
   );
 }
