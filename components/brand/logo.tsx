@@ -41,7 +41,7 @@ export function Logo({ className }: { className?: string }) {
     >
       <EsgexaMark />
       <span className="text-[1.12rem] font-semibold text-slate">
-        Esg<span className="text-primary">x</span>a
+        Esge<span className="text-primary">x</span>a
       </span>
     </Link>
   );
