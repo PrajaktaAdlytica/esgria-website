@@ -12,22 +12,15 @@ export function EsgexaLogo({
   className?: string;
 }) {
   const logo = (
-    <span className={cn("inline-flex items-center gap-3", className)}>
-      <span className="relative block h-11 w-11 shrink-0 overflow-hidden rounded-2xl border border-teal-100 bg-white shadow-hairline">
-        <Image
-          src="/esgexa-logo-source.svg"
-          alt=""
-          width={88}
-          height={44}
-          sizes="88px"
-          className="h-11 w-[88px] max-w-none object-cover object-left"
-          priority={priority}
-        />
-        <span className="absolute inset-y-0 right-0 w-2 bg-white" aria-hidden="true" />
-      </span>
-      <span className="text-lg font-semibold text-slate-950">
-        Esge<span className="text-primary">x</span>a
-      </span>
+    <span className={cn("inline-flex items-center", className)}>
+      <Image
+        src="/esgexa-logo.svg"
+        alt="Esgexa"
+        width={174}
+        height={64}
+        priority={priority}
+        className="h-11 w-auto"
+      />
     </span>
   );
 

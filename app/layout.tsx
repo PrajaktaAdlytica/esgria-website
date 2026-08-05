@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   description:
     "Collect supplier ESG questionnaires, verify evidence, score suppliers and manage corrective actions from one enterprise platform.",
   metadataBase: new URL("https://esgexa.com"),
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/esgexa-mark.svg",
+  },
   openGraph: {
     title: "Esgexa | AI Supplier ESG Intelligence",
     description:
