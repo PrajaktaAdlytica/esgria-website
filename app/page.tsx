@@ -745,7 +745,7 @@ function Platform() {
               </span>
               <div>
                 <div className="font-semibold">Supplier ESG Overview</div>
-                <div className="text-sm text-slate-500">Esgexa Sp. z o.o. · Warsaw, Poland</div>
+                <div className="text-sm text-slate-500">Esgexa Sp. z o.o. · 6818 Park Avenue, Budapest, Budapest (BU), 1024, Hungary</div>
               </div>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -1005,7 +1005,7 @@ function CTAFooter() {
             <SectionLabel>Request Demo</SectionLabel>
             <h2 className="max-w-2xl text-4xl font-semibold sm:text-5xl">See how Esgexa turns supplier ESG chaos into verified intelligence.</h2>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-              Esgexa Sp. z o.o. · ul. Prosta 20, 00-850 Warsaw, Poland · hello@esgexa.com
+              Esgexa Sp. z o.o. · 6818 Park Avenue, Budapest, Budapest (BU), 1024, Hungary · hello@esgexa.com
             </p>
           </div>
           <form className="rounded-3xl border border-white/10 bg-white p-5 text-slate-950">

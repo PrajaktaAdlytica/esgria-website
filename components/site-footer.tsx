@@ -37,11 +37,11 @@ export function SiteFooter() {
           <div className="flex items-center">
             <EsgexaLogo href="/" />
           </div>
-          <div className="mt-4 max-w-sm space-y-1 text-sm leading-6 text-slate-600">
+        <div className="mt-4 max-w-sm space-y-1 text-sm leading-6 text-slate-600">
             <p>Esgexa sp. z o.o.</p>
-            <p>ul. Prosta 70, 00-838 Warszawa, Poland</p>
+            <p>6818 Park Avenue, Budapest, Budapest (BU), 1024, Hungary</p>
             <p>hello@esgexa.com</p>
-            <p>+48 22 307 14 61</p>
+            <p>06 03 160 5553</p>
           </div>
         </div>
         {footerColumns.map(([head, ...items]) => (

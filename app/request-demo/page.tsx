@@ -17,7 +17,7 @@ export default function RequestDemoPage() {
               See Esgexa with your supplier ESG workflow.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              Meet with an Esgexa specialist in Warsaw to map your supplier data collection, evidence review and corrective action process.
+              Meet with an Esgexa specialist in Budapest to map your supplier data collection, evidence review and corrective action process.
             </p>
             <div className="mt-8 grid gap-3 text-sm text-slate-600">
               {[
@@ -40,7 +40,7 @@ export default function RequestDemoPage() {
               </span>
               <div>
                 <h2 className="text-xl font-semibold text-slate-950">Book a product walkthrough</h2>
-                <p className="text-sm text-slate-500">Esgexa Sp. z o.o. · Warsaw, Poland</p>
+                <p className="text-sm text-slate-500">Esgexa Sp. z o.o. · 6818 Park Avenue, Budapest, Budapest (BU), 1024, Hungary</p>
               </div>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
