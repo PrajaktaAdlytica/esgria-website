@@ -37,11 +37,17 @@ export function SiteFooter() {
           <div className="flex items-center">
             <EsgexaLogo href="/" />
           </div>
-        <div className="mt-4 max-w-sm space-y-1 text-sm leading-6 text-slate-600">
+          <div className="mt-4 max-w-sm space-y-1 text-sm leading-6 text-slate-600">
             <p>Esgexa sp. z o.o.</p>
             <p>6818 Park Avenue, Budapest, Budapest (BU), 1024, Hungary</p>
             <p>hello@esgexa.com</p>
             <p>06 03 160 5553</p>
+            <a href="https://www.linkedin.com/company/esgexa/" target="_blank" rel="noreferrer noopener" className="mt-1 inline-flex text-slate-600 transition hover:text-primary">
+              LinkedIn
+            </a>
+            <a href="https://www.crunchbase.com/organization/esgexa" target="_blank" rel="noreferrer noopener" className="inline-flex text-slate-600 transition hover:text-primary">
+              Crunchbase
+            </a>
           </div>
         </div>
         {footerColumns.map(([head, ...items]) => (
