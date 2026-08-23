@@ -5,12 +5,12 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteNav } from "@/components/site-nav";
 
 export const metadata: Metadata = {
-  title: "VendRecord secures $480K in funding from Dlabs",
-  description: "VendRecord has secured $480K in funding from Dlabs, announced May 6, 2026.",
+  title: "VendRecord secures $480K in funding from Gama VC",
+  description: "VendRecord has secured $480K in funding from Gama VC, announced May 6, 2026.",
   alternates: { canonical: "/news/funding-announcement" },
   openGraph: {
-    title: "VendRecord secures $480K in funding from Dlabs",
-    description: "VendRecord has secured $480K in funding from Dlabs, announced May 6, 2026.",
+    title: "VendRecord secures $480K in funding from Gama VC",
+    description: "VendRecord has secured $480K in funding from Gama VC, announced May 6, 2026.",
     type: "article",
     publishedTime: "2026-05-06T00:00:00.000Z",
   },
@@ -35,22 +35,22 @@ export default function FundingAnnouncementPage() {
               May 6, 2026
             </time>
             <h1 className="mt-5 max-w-5xl text-5xl font-semibold leading-[1.04] text-slate-950 sm:text-6xl">
-              VendRecord secures $480K in funding from Dlabs.
+              VendRecord secures $480K in funding from Gama VC.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-              VendRecord is part of Dlabs&apos; global portfolio of companies building supplier ESG intelligence for complex operating environments.
+              VendRecord is backed by Gama VC, supporting companies building supplier ESG intelligence for complex operating environments.
             </p>
           </header>
 
           <div className="mt-12 max-w-4xl rounded-[32px] border border-slate-200 bg-white p-6 shadow-soft lg:p-8">
-            <p className="text-lg leading-8 text-slate-600">VendRecord has secured $480K in funding from Dlabs.</p>
+            <p className="text-lg leading-8 text-slate-600">VendRecord has secured $480K in funding from Gama VC.</p>
             <a
-              href="https://d-labs-site.vercel.app/companies"
+              href="https://gamavc.com"
               target="_blank"
               rel="noreferrer noopener"
               className="mt-7 inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(15,118,110,0.18)] transition hover:bg-[#0d665f] active:scale-95"
             >
-              View Dlabs portfolio <ArrowUpRight className="h-4 w-4" />
+              View Gama VC <ArrowUpRight className="h-4 w-4" />
             </a>
           </div>
 

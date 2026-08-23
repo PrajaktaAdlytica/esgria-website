@@ -690,20 +690,20 @@ function FundingAnnouncement() {
                 </time>
               </div>
               <h2 className="text-4xl font-semibold leading-tight text-slate-950 sm:text-5xl">
-                VendRecord secures $480K in funding from Dlabs.
+                VendRecord secures $480K in funding from Gama VC.
               </h2>
               <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-                VendRecord is part of Dlabs&apos; global portfolio of companies building supplier ESG intelligence for complex operating environments.
+                VendRecord is backed by Gama VC, supporting companies building supplier ESG intelligence for complex operating environments.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
               <a
-                href="https://d-labs-site.vercel.app/companies"
+                href="https://gamavc.com"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-primary px-5 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(15,118,110,0.18)] transition hover:bg-[#0d665f] active:scale-95"
               >
-                View Dlabs portfolio <ArrowRight className="h-4 w-4" />
+                View Gama VC <ArrowRight className="h-4 w-4" />
               </a>
               <Link
                 href="/news/funding-announcement"
