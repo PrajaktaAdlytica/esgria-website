@@ -55,8 +55,8 @@ export function EntryHero() {
         transition={{ duration: 22, ease: "easeInOut", repeat: Infinity }}
       >
         <Image
-          src="/esgexa-entry-evidence.png"
-          alt="Supplier ESG evidence documents connected through Esgexa verification intelligence"
+          src="/vendrecord-entry-evidence.png"
+          alt="Supplier ESG evidence documents connected through VendRecord verification intelligence"
           fill
           priority
           sizes="100vw"
@@ -67,13 +67,8 @@ export function EntryHero() {
 
       <header className="relative z-30 border-b border-white/15">
         <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
-          <a href="#top" className="inline-flex items-center gap-3" aria-label="Esgexa home">
-            <span className="grid h-12 w-12 place-items-center overflow-hidden rounded-2xl border border-white/15 bg-white">
-              <Image src="/esgexa-mark.svg" alt="" width={48} height={48} priority />
-            </span>
-            <span className="text-xl font-semibold text-white">
-              Esge<span className="text-[#6edbd1]">x</span>a
-            </span>
+          <a href="#top" className="inline-flex items-center" aria-label="VendRecord home">
+            <Image src="/vendrecord-logo-white.svg" alt="VendRecord" width={244} height={64} priority className="h-12 w-auto" />
           </a>
 
           <nav className="hidden items-center gap-8 text-sm font-medium text-white/78 lg:flex">
@@ -167,9 +162,9 @@ export function EntryHero() {
           </div>
           <h1
             id="entry-heading"
-            className="text-[clamp(4.5rem,10vw,9rem)] font-medium leading-[0.82] tracking-[0] text-white"
+            className="text-[clamp(3.25rem,7.8vw,7rem)] font-medium leading-[0.82] tracking-[0] text-white"
           >
-            Esge<span className="text-[#69d2c8]">x</span>a
+            Vend<span className="text-[#69d2c8]">Record</span>
           </h1>
           <p className="mt-8 max-w-xl text-xl leading-8 text-white/86 sm:text-2xl">
             Supplier ESG intelligence, verified.

@@ -1,0 +1,14 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>VendRecord</title>
+  <defs>
+    <linearGradient id="vr-teal" x1="30" y1="27" x2="152" y2="153" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#159A90"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="44" fill="white"/>
+  <path d="M31 37L82 140L111 88" stroke="url(#vr-teal)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M73 37H116C135 37 146 47 146 63C146 79 135 88 117 88H106L141 134" stroke="url(#vr-teal)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="144" cy="139" r="20" fill="#84CC16"/>
+  <circle cx="144" cy="139" r="7" fill="white"/>
+</svg>

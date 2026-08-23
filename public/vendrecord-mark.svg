@@ -1,12 +1,11 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <title>VendRecord</title>
+  <title>VendRecord symbol</title>
   <defs>
     <linearGradient id="vr-teal" x1="7" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
       <stop stop-color="#159A90"/>
       <stop offset="1" stop-color="#0F766E"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="16" fill="white"/>
   <path d="M8.5 10.5L29.5 53L41.5 31.5" stroke="url(#vr-teal)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M26 10.5H43.5C51.5 10.5 56 14.6 56 21.1C56 27.6 51.6 31.5 44 31.5H39.5L54 50.5" stroke="url(#vr-teal)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="55" cy="52" r="8" fill="#84CC16"/>

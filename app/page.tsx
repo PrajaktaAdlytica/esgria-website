@@ -41,24 +41,24 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteNav } from "@/components/site-nav";
-import { EsgexaLogo } from "@/components/esgexa-logo";
+import { VendRecordLogo } from "@/components/vendrecord-logo";
 import { EntryHero } from "@/components/entry-hero";
 
 const products = [
   {
-    name: "Esgexa Collect",
+    name: "VendRecord Collect",
     href: "#collect",
     copy: "Questionnaires, supplier portal and evidence intake.",
     icon: UploadCloud,
   },
   {
-    name: "Esgexa Score",
+    name: "VendRecord Score",
     href: "#score",
     copy: "AI evidence review and consistent ESG scoring.",
     icon: BarChart3,
   },
   {
-    name: "Esgexa Tasks",
+    name: "VendRecord Tasks",
     href: "#tasks",
     copy: "Corrective actions, owners and deadlines.",
     icon: ClipboardCheck,
@@ -149,7 +149,7 @@ const productCards = [
   {
     id: "collect",
     href: "/products/collect",
-    title: "Esgexa Collect",
+    title: "VendRecord Collect",
     headline: "Collect supplier information automatically.",
     copy: "Launch questionnaire waves, monitor completion and keep evidence attached to each supplier profile.",
     icon: UploadCloud,
@@ -161,7 +161,7 @@ const productCards = [
   {
     id: "score",
     href: "/products/score",
-    title: "Esgexa Score",
+    title: "VendRecord Score",
     headline: "Generate trusted ESG scores.",
     copy: "Turn verified supplier evidence into comparable ESG scores with framework mapping and AI explanations.",
     icon: BarChart3,
@@ -173,7 +173,7 @@ const productCards = [
   {
     id: "tasks",
     href: "/products/tasks",
-    title: "Esgexa Tasks",
+    title: "VendRecord Tasks",
     headline: "Drive continuous improvement.",
     copy: "Assign corrective actions, track deadlines and close the loop with evidence-backed supplier progress.",
     icon: ClipboardCheck,
@@ -185,13 +185,13 @@ const productCards = [
 ] as const;
 
 const faqs = [
-  ["How does Esgexa calculate ESG scores?", "Esgexa maps questionnaire answers and evidence to your ESG framework, weights the criteria, and applies AI-assisted checks before publishing a supplier score."],
+  ["How does VendRecord calculate ESG scores?", "VendRecord maps questionnaire answers and evidence to your ESG framework, weights the criteria, and applies AI-assisted checks before publishing a supplier score."],
   ["How is supplier evidence verified?", "Documents are extracted, classified and checked for expiry dates, issuer details, policy coverage and inconsistencies. Teams can approve, reject or request clarification."],
   ["Can suppliers upload documents directly?", "Yes. Suppliers receive a secure portal for questionnaires, certificates, policies, audit reports and follow-up responses."],
-  ["Does Esgexa support CSRD?", "Esgexa supports CSRD-aligned supplier data collection and can map custom questions to EU reporting requirements."],
-  ["Does Esgexa integrate with SAP?", "Professional and Enterprise plans support ERP integrations including SAP workflows through API and managed connectors."],
+  ["Does VendRecord support CSRD?", "VendRecord supports CSRD-aligned supplier data collection and can map custom questions to EU reporting requirements."],
+  ["Does VendRecord integrate with SAP?", "Professional and Enterprise plans support ERP integrations including SAP workflows through API and managed connectors."],
   ["Can questionnaires be customised?", "Yes. Teams can create reusable templates, localise questions and assign supplier-specific evidence requirements."],
-  ["How are corrective actions tracked?", "Esgexa Tasks assigns owners, deadlines, reminders and status history for each supplier improvement plan."],
+  ["How are corrective actions tracked?", "VendRecord Tasks assigns owners, deadlines, reminders and status history for each supplier improvement plan."],
   ["What security certifications are supported?", "Enterprise deployments support SSO, audit logs, advanced permissions and security review workflows for ISO 27001 and SOC 2 aligned controls."],
 ];
 
@@ -279,7 +279,7 @@ function Navbar() {
       )}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
-        <EsgexaLogo href="#top" priority />
+        <VendRecordLogo href="#top" priority />
 
         <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 lg:flex">
           <div ref={menuRef} className="relative">
@@ -690,10 +690,10 @@ function FundingAnnouncement() {
                 </time>
               </div>
               <h2 className="text-4xl font-semibold leading-tight text-slate-950 sm:text-5xl">
-                Esgexa secures $480K in funding from Dlabs.
+                VendRecord secures $480K in funding from Dlabs.
               </h2>
               <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
-                Esgexa is part of Dlabs&apos; global portfolio of companies building supplier ESG intelligence for complex operating environments.
+                VendRecord is part of Dlabs&apos; global portfolio of companies building supplier ESG intelligence for complex operating environments.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
@@ -745,7 +745,7 @@ function Platform() {
               </span>
               <div>
                 <div className="font-semibold">Supplier ESG Overview</div>
-                <div className="text-sm text-slate-500">Esgexa Sp. z o.o. · 6818 Park Avenue, Budapest, Budapest (BU), 1024, Hungary</div>
+                <div className="text-sm text-slate-500">VendRecord Sp. z o.o. · 6818 Park Avenue, Budapest, Budapest (BU), 1024, Hungary</div>
               </div>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -930,7 +930,7 @@ function Pricing() {
 
 function TestimonialsAndFaq() {
   const testimonials = [
-    ["Anna Kowalska", "Head of Sustainable Procurement", "Baltic Manufacturing", "Esgexa reduced supplier ESG collection time from weeks to days. We finally have one trusted source of supplier sustainability data."],
+    ["Anna Kowalska", "Head of Sustainable Procurement", "Baltic Manufacturing", "VendRecord reduced supplier ESG collection time from weeks to days. We finally have one trusted source of supplier sustainability data."],
     ["Piotr Nowak", "Procurement Director", "PolSteel Group", "The AI verification process helped our team eliminate manual evidence reviews and improved supplier engagement."],
     ["Katarzyna Wisniewska", "ESG Manager", "Nova Logistics", "We now track supplier improvement plans centrally instead of relying on spreadsheets and email."],
   ];
@@ -1003,9 +1003,9 @@ function CTAFooter() {
         <div className="mx-auto grid max-w-7xl gap-8 rounded-[32px] bg-slate-950 p-8 text-white lg:grid-cols-[1fr_420px] lg:p-12">
           <div>
             <SectionLabel>Request Demo</SectionLabel>
-            <h2 className="max-w-2xl text-4xl font-semibold sm:text-5xl">See how Esgexa turns supplier ESG chaos into verified intelligence.</h2>
+            <h2 className="max-w-2xl text-4xl font-semibold sm:text-5xl">See how VendRecord turns supplier ESG chaos into verified intelligence.</h2>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-              Esgexa Sp. z o.o. · 6818 Park Avenue, Budapest, Budapest (BU), 1024, Hungary · hello@esgexa.com
+              VendRecord Sp. z o.o. · 6818 Park Avenue, Budapest, Budapest (BU), 1024, Hungary · hello@vendrecord.com
             </p>
           </div>
           <form className="rounded-3xl border border-white/10 bg-white p-5 text-slate-950">

@@ -18,7 +18,7 @@ import { cn } from "@/lib/utils";
 
 const productContent = {
   collect: {
-    label: "Esgexa Collect",
+    label: "VendRecord Collect",
     eyebrow: "Supplier data collection",
     title: "Collect supplier information automatically.",
     description:
@@ -43,7 +43,7 @@ const productContent = {
     metrics: [["3.2x", "faster collection"], ["420", "Polish suppliers onboarded"], ["18", "framework mappings"]],
   },
   score: {
-    label: "Esgexa Score",
+    label: "VendRecord Score",
     eyebrow: "AI ESG scoring",
     title: "Generate trusted ESG scores.",
     description:
@@ -68,7 +68,7 @@ const productContent = {
     metrics: [["86", "score preview"], ["63%", "less manual review"], ["4", "risk bands"]],
   },
   tasks: {
-    label: "Esgexa Tasks",
+    label: "VendRecord Tasks",
     eyebrow: "Corrective actions",
     title: "Drive continuous improvement.",
     description:

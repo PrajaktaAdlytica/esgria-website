@@ -13,21 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Esgexa | AI Supplier ESG Intelligence",
+  title: "VendRecord | AI Supplier ESG Intelligence",
   description:
     "Collect supplier ESG questionnaires, verify evidence, score suppliers and manage corrective actions from one enterprise platform.",
-  metadataBase: new URL("https://esgexa.com"),
+  metadataBase: new URL("https://vendrecord.com"),
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
-    apple: "/esgexa-mark.svg",
+    apple: "/apple-touch-icon.svg",
   },
   openGraph: {
-    title: "Esgexa | AI Supplier ESG Intelligence",
+    title: "VendRecord | AI Supplier ESG Intelligence",
     description:
       "Collect supplier ESG questionnaires, verify evidence, score suppliers and manage corrective actions from one enterprise platform.",
-    url: "https://esgexa.com",
-    siteName: "Esgexa",
+    url: "https://vendrecord.com",
+    siteName: "VendRecord",
     type: "website",
   },
 };
@@ -40,11 +40,11 @@ export default function RootLayout({
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Esgexa",
-    url: "https://esgexa.com",
+    name: "VendRecord",
+    url: "https://vendrecord.com",
     sameAs: [
-      "https://www.linkedin.com/company/esgexa/",
-      "https://www.crunchbase.com/organization/esgexa",
+      "https://www.linkedin.com/company/vendrecord/",
+      "https://www.crunchbase.com/organization/vendrecord",
     ],
   };
 

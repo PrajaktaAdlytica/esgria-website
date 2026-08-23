@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight, LockKeyhole, Mail } from "lucide-react";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteNav } from "@/components/site-nav";
-import { EsgexaLogo } from "@/components/esgexa-logo";
+import { VendRecordLogo } from "@/components/vendrecord-logo";
 
 export default function SignInPage() {
   return (
@@ -19,13 +19,13 @@ export default function SignInPage() {
               Sign in to your supplier ESG workspace.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              Continue to Esgexa Collect, Score and Tasks with your company account.
+              Continue to VendRecord Collect, Score and Tasks with your company account.
             </p>
           </div>
 
           <form className="rounded-[32px] border border-slate-200 bg-white p-6 shadow-soft">
             <div className="mb-8 flex items-center gap-3">
-              <EsgexaLogo />
+              <VendRecordLogo />
             </div>
             <label className="text-sm font-semibold text-slate-700" htmlFor="email">
               Work email

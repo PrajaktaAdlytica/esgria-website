@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EsgexaLogo } from "@/components/esgexa-logo";
+import { VendRecordLogo } from "@/components/vendrecord-logo";
 
 const footerColumns = [
   [
@@ -35,17 +35,17 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.2fr_repeat(4,1fr)]">
         <div>
           <div className="flex items-center">
-            <EsgexaLogo href="/" />
+            <VendRecordLogo href="/" />
           </div>
           <div className="mt-4 max-w-sm space-y-1 text-sm leading-6 text-slate-600">
-            <p>Esgexa sp. z o.o.</p>
+            <p>VendRecord sp. z o.o.</p>
             <p>6818 Park Avenue, Budapest, Budapest (BU), 1024, Hungary</p>
-            <p>hello@esgexa.com</p>
+            <p>hello@vendrecord.com</p>
             <p>06 03 160 5553</p>
-            <a href="https://www.linkedin.com/company/esgexa/" target="_blank" rel="noreferrer noopener" className="mt-1 inline-flex text-slate-600 transition hover:text-primary">
+            <a href="https://www.linkedin.com/company/vendrecord/" target="_blank" rel="noreferrer noopener" className="mt-1 inline-flex text-slate-600 transition hover:text-primary">
               LinkedIn
             </a>
-            <a href="https://www.crunchbase.com/organization/esgexa" target="_blank" rel="noreferrer noopener" className="inline-flex text-slate-600 transition hover:text-primary">
+            <a href="https://www.crunchbase.com/organization/vendrecord" target="_blank" rel="noreferrer noopener" className="inline-flex text-slate-600 transition hover:text-primary">
               Crunchbase
             </a>
           </div>

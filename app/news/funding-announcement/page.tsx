@@ -5,12 +5,12 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteNav } from "@/components/site-nav";
 
 export const metadata: Metadata = {
-  title: "Esgexa secures $480K in funding from Dlabs",
-  description: "Esgexa has secured $480K in funding from Dlabs, announced May 6, 2026.",
+  title: "VendRecord secures $480K in funding from Dlabs",
+  description: "VendRecord has secured $480K in funding from Dlabs, announced May 6, 2026.",
   alternates: { canonical: "/news/funding-announcement" },
   openGraph: {
-    title: "Esgexa secures $480K in funding from Dlabs",
-    description: "Esgexa has secured $480K in funding from Dlabs, announced May 6, 2026.",
+    title: "VendRecord secures $480K in funding from Dlabs",
+    description: "VendRecord has secured $480K in funding from Dlabs, announced May 6, 2026.",
     type: "article",
     publishedTime: "2026-05-06T00:00:00.000Z",
   },
@@ -35,15 +35,15 @@ export default function FundingAnnouncementPage() {
               May 6, 2026
             </time>
             <h1 className="mt-5 max-w-5xl text-5xl font-semibold leading-[1.04] text-slate-950 sm:text-6xl">
-              Esgexa secures $480K in funding from Dlabs.
+              VendRecord secures $480K in funding from Dlabs.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-              Esgexa is part of Dlabs&apos; global portfolio of companies building supplier ESG intelligence for complex operating environments.
+              VendRecord is part of Dlabs&apos; global portfolio of companies building supplier ESG intelligence for complex operating environments.
             </p>
           </header>
 
           <div className="mt-12 max-w-4xl rounded-[32px] border border-slate-200 bg-white p-6 shadow-soft lg:p-8">
-            <p className="text-lg leading-8 text-slate-600">Esgexa has secured $480K in funding from Dlabs.</p>
+            <p className="text-lg leading-8 text-slate-600">VendRecord has secured $480K in funding from Dlabs.</p>
             <a
               href="https://d-labs-site.vercel.app/companies"
               target="_blank"
@@ -60,15 +60,15 @@ export default function FundingAnnouncementPage() {
                 <Building2 className="h-6 w-6" />
               </span>
               <div>
-                <h2 className="text-xl font-semibold text-slate-950">About Esgexa</h2>
+                <h2 className="text-xl font-semibold text-slate-950">About VendRecord</h2>
                 <p className="mt-2 leading-7 text-slate-600">
-                  Esgexa builds supplier ESG intelligence for procurement teams, sustainability teams and suppliers.
+                  VendRecord builds supplier ESG intelligence for procurement teams, sustainability teams and suppliers.
                 </p>
               </div>
             </div>
             <div className="mt-6 flex flex-wrap gap-3 border-t border-slate-200 pt-6">
               <a
-                href="https://www.linkedin.com/company/esgexa/"
+                href="https://www.linkedin.com/company/vendrecord/"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-5 text-sm font-semibold text-slate-900 transition hover:border-primary hover:text-primary"
@@ -76,7 +76,7 @@ export default function FundingAnnouncementPage() {
                 <Linkedin className="h-4 w-4" /> LinkedIn <ArrowUpRight className="h-4 w-4" />
               </a>
               <a
-                href="https://www.crunchbase.com/organization/esgexa"
+                href="https://www.crunchbase.com/organization/vendrecord"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-5 text-sm font-semibold text-slate-900 transition hover:border-primary hover:text-primary"

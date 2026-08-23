@@ -1,0 +1,8 @@
+<svg width="244" height="64" viewBox="0 0 244 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>VendRecord monochrome</title>
+  <path d="M8.5 10.5L29.5 53L41.5 31.5" stroke="#1E293B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 10.5H43.5C51.5 10.5 56 14.6 56 21.1C56 27.6 51.6 31.5 44 31.5H39.5L54 50.5" stroke="#1E293B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="55" cy="52" r="8" fill="#1E293B"/>
+  <circle cx="55" cy="52" r="2.75" fill="white"/>
+  <text x="73" y="41.5" fill="#1E293B" font-family="Geist, Inter, Arial, sans-serif" font-size="27" font-weight="650" letter-spacing="-1.15">VendRecord</text>
+</svg>

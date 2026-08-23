@@ -12,23 +12,23 @@ import {
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
-import { EsgexaLogo } from "@/components/esgexa-logo";
+import { VendRecordLogo } from "@/components/vendrecord-logo";
 
 const products = [
   {
-    name: "Esgexa Collect",
+    name: "VendRecord Collect",
     href: "/products/collect",
     copy: "Questionnaires, supplier portal and evidence intake.",
     icon: UploadCloud,
   },
   {
-    name: "Esgexa Score",
+    name: "VendRecord Score",
     href: "/products/score",
     copy: "AI evidence review and consistent ESG scoring.",
     icon: BarChart3,
   },
   {
-    name: "Esgexa Tasks",
+    name: "VendRecord Tasks",
     href: "/products/tasks",
     copy: "Corrective actions, owners and deadlines.",
     icon: ClipboardCheck,
@@ -107,7 +107,7 @@ export function SiteNav({ revealAfterId }: { revealAfterId?: string }) {
       )}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
-        <EsgexaLogo href="/" priority />
+        <VendRecordLogo href="/" priority />
 
         <nav className="hidden items-center gap-7 text-sm font-medium text-slate-700 lg:flex">
           <div ref={menuRef} className="relative">
