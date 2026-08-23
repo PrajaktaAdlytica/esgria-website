@@ -14,23 +14,15 @@ export function VendRecordLogo({
   inverted?: boolean;
 }) {
   const logo = (
-    <span className={cn("inline-flex items-center gap-2.5", className)}>
+    <span className={cn("inline-flex items-center", className)}>
       <Image
-        src="/vendrecord-mark.svg"
-        alt=""
-        width={64}
+        src={inverted ? "/vendrecord-logo-white.svg" : "/vendrecord-logo.svg"}
+        alt="VendRecord"
+        width={384}
         height={64}
         priority={priority}
-        className="h-11 w-11"
+        className="h-9 w-auto"
       />
-      <span
-        className={cn(
-          "whitespace-nowrap text-[1.18rem] font-semibold tracking-[-0.035em]",
-          inverted ? "text-white" : "text-slate-950",
-        )}
-      >
-        Vend<span className={inverted ? "text-[#6edbd1]" : "text-primary"}>Record</span>
-      </span>
     </span>
   );
 
